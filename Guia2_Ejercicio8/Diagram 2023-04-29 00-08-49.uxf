@@ -1,0 +1,20 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>790</x><y>230</y><w>210</w><h>90</h></coordinates><panel_attributes>Pieza
+--
+-nombre: String
+--
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>320</x><y>230</y><w>210</w><h>120</h></coordinates><panel_attributes>Droide
+--
+
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>520</x><y>250</y><w>290</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+-piezasOperativas
+-piezasNoOperativas</panel_attributes><additional_attributes>270;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>460</x><y>140</y><w>80</w><h>110</h></coordinates><panel_attributes>lt=&lt;..</panel_attributes><additional_attributes>60;10;10;90</additional_attributes></element><element><id>UMLClass</id><coordinates><x>450</x><y>60</y><w>210</w><h>90</h></coordinates><panel_attributes>&lt;&lt;enum&gt;&gt;
+EstadoDroide
+--
+_+COMPLETAMENTE_OPERATIVO_
+_+REPARACION_PARCIAL_
+_+REPARACION_IMPOSIBLE_
+--
+
+</panel_attributes><additional_attributes></additional_attributes></element></diagram>

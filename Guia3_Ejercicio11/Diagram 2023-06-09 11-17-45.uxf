@@ -1,0 +1,47 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>250</x><y>260</y><w>210</w><h>80</h></coordinates><panel_attributes>UProp
+--
+
+--
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>450</x><y>270</y><w>300</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+m1=1..n
+-clientes</panel_attributes><additional_attributes>280;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>730</x><y>240</y><w>210</w><h>110</h></coordinates><panel_attributes>Cliente
+--
+- apellido: String
+- nombre: String
+- telefono: String
+- mail: String
+--
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>330</x><y>450</y><w>210</w><h>110</h></coordinates><panel_attributes>Inmobiliaria
+--
+- nombre: String
+- mail: String
+- porcentajeComisionVenta: int
+--
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>380</x><y>330</y><w>110</w><h>140</h></coordinates><panel_attributes>lt=&lt;-
+m1=1..n
+-inmobiliarias</panel_attributes><additional_attributes>10;120;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>420</x><y>550</y><w>190</w><h>210</h></coordinates><panel_attributes>lt=&lt;-
+m1=1..n
+-inmuebles</panel_attributes><additional_attributes>160;190;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>470</x><y>740</y><w>210</w><h>180</h></coordinates><panel_attributes>Inmueble
+--
+- domicilio: String
+- superficie: int
+- cantAmbientes: int
+- precioDolares: double
+--
++ setPrecio(Double) : void
+- verificarPrecio(Double) : void
+- notificarInteresados(Double): void
+- mensajeParaInteresados(Double): String
++ toString(): String
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>530</x><y>480</y><w>230</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>210;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>820</x><y>340</y><w>30</w><h>150</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;130;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>740</x><y>470</y><w>260</w><h>110</h></coordinates><panel_attributes>&lt;&lt;interface&gt;&gt;
+/Interesado/
+--
+
+--
++ responderAnteCambioPrecio(String): void
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>670</x><y>570</y><w>150</w><h>240</h></coordinates><panel_attributes>lt=&lt;-
+m1=1..n
+-interesados</panel_attributes><additional_attributes>110;10;10;220</additional_attributes></element></diagram>

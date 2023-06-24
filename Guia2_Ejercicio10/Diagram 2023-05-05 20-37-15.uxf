@@ -1,0 +1,65 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>500</x><y>190</y><w>280</w><h>230</h></coordinates><panel_attributes>Artista
+--
+-ID: int
+-nombre: String
+--
++Artista(int, String, ArrayList&lt;Cancion&gt;)
++esFanDestacado(Usuario): boolean
++getDuracionPromedioCanciones(): int
+-getDuracionTotalCanciones(): int
++getNombre(): String
++getPrimeras5Canciones(): ArrayList&lt;Cancion&gt;
++getCanciones(): ArrayList&lt;Cancion&gt;
++borrarLikeDeUsuario(String): void
+-sePudoBorrar(String): Usuario
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>910</x><y>180</y><w>210</w><h>190</h></coordinates><panel_attributes>Cancion
+--
+-ID: int
+-nombre: String
+-duracion: int
+--
++Cancion(int, String, int, ArrayList&lt;Usuario&gt;)
++getDuracion: int
++fueLikeadaPorUsuario(String): boolean
++borrarLikeDeUsuario(String): void
++mostrarCanciones():</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>770</x><y>220</y><w>160</w><h>70</h></coordinates><panel_attributes>lt=&lt;-
+1..n
+-canciones
+</panel_attributes><additional_attributes>140;30;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>490</x><y>450</y><w>210</w><h>190</h></coordinates><panel_attributes>Usuario
+--
+-nombre: String
+--
++Usuario(String, EstadoUsuario)
++getTotalCancionesLikeadas(ArrayList&lt;Cancion&gt;): int
++getNombre(): String
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>690</x><y>360</y><w>290</w><h>160</h></coordinates><panel_attributes>lt=&lt;-
+1..n
+-likes
+</panel_attributes><additional_attributes>10;140;270;10</additional_attributes></element><element><id>Relation</id><coordinates><x>690</x><y>590</y><w>200</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+1..1
+-estadoUsuario</panel_attributes><additional_attributes>180;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>870</x><y>540</y><w>210</w><h>110</h></coordinates><panel_attributes>&lt;&lt;enum&gt;&gt;
+EstadoUsuario
+--
+_+HABILITADO_
+_+PRUEBA_GRATIS_
+_+SUSPENDIDO_
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>0</x><y>310</y><w>290</w><h>190</h></coordinates><panel_attributes>Clonify
+--
+
+--
++Clonify()
++Clonify(ArrayList&lt;Artistas&gt;, ArrayList&lt;Usuarios&gt;)
++mostrarDuracionPromedio(Artista): void
++primeras5Canciones(Artista): ArrayList&lt;Cancion&gt;
++borrarUsuario(Usuario): boolean
+-duracionMinutos(int): int
+-duracionSegundos(int): int
+-borrarLikesDeUsuario(String): void
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>280</x><y>290</y><w>240</w><h>130</h></coordinates><panel_attributes>lt=&lt;-
+1..n
+-artistas
+</panel_attributes><additional_attributes>220;10;10;110</additional_attributes></element><element><id>Relation</id><coordinates><x>280</x><y>420</y><w>230</w><h>110</h></coordinates><panel_attributes>lt=&lt;-
+1..n
+-usuarios
+</panel_attributes><additional_attributes>210;90;10;10</additional_attributes></element></diagram>
