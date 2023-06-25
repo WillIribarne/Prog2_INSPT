@@ -1,0 +1,63 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>590</x><y>280</y><w>210</w><h>100</h></coordinates><panel_attributes>/Examen/
+--
+-fecha: String
+
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1000</x><y>280</y><w>210</w><h>100</h></coordinates><panel_attributes>Persona
+--
+-DNI: int
+-nombre: String
+-apellido: String
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>350</x><y>510</y><w>170</w><h>110</h></coordinates><panel_attributes>ExamenDeMoto
+--
+
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>860</x><y>510</y><w>170</w><h>110</h></coordinates><panel_attributes>ExamenDeAuto
+--
+
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>790</x><y>310</y><w>230</w><h>40</h></coordinates><panel_attributes>lt=&lt;-
+- persona</panel_attributes><additional_attributes>210;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>440</x><y>370</y><w>270</w><h>160</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>250;10;10;140</additional_attributes></element><element><id>Relation</id><coordinates><x>710</x><y>370</y><w>240</w><h>160</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;220;140</additional_attributes></element><element><id>UMLClass</id><coordinates><x>40</x><y>510</y><w>180</w><h>110</h></coordinates><panel_attributes>InfoMoto
+--
+-tieneEspejos: boolean
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1020</x><y>540</y><w>160</w><h>40</h></coordinates><panel_attributes>lt=&lt;-
+- infoAuto</panel_attributes><additional_attributes>140;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>1160</x><y>510</y><w>180</w><h>110</h></coordinates><panel_attributes>InfoAuto
+--
+-cantidadPuertas: int
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>210</x><y>540</y><w>160</w><h>40</h></coordinates><panel_attributes>lt=&lt;-
+- infoMoto</panel_attributes><additional_attributes>10;20;140;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>610</x><y>800</y><w>180</w><h>110</h></coordinates><panel_attributes>/InfoVehiculo/
+--
+-patente: String
+-marca: String
+-cilindrada: int
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>170</x><y>610</y><w>460</w><h>250</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>440;230;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>780</x><y>610</y><w>440</w><h>260</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;240;420;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>610</x><y>690</y><w>180</w><h>70</h></coordinates><panel_attributes>Circuito
+--
+-tiempo: int
+-faltasCometidas: int
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>730</x><y>610</y><w>240</w><h>100</h></coordinates><panel_attributes>lt=&lt;-
+- circuito</panel_attributes><additional_attributes>10;80;220;10</additional_attributes></element><element><id>Relation</id><coordinates><x>420</x><y>610</y><w>270</w><h>100</h></coordinates><panel_attributes>lt=&lt;-
+m1=1..n
+- circuitos</panel_attributes><additional_attributes>250;80;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>610</x><y>490</y><w>180</w><h>80</h></coordinates><panel_attributes>&lt;&lt;interface&gt;&gt;
+Evaluable
+--
+
+--
++seAprobo(): boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>690</x><y>370</y><w>30</w><h>140</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;120;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>690</x><y>560</y><w>30</w><h>150</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;10;130</additional_attributes></element><element><id>UMLClass</id><coordinates><x>620</x><y>90</y><w>170</w><h>80</h></coordinates><panel_attributes>SedeLicencias
+--
+
+--
++obtenerInforme(): Informe
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>990</x><y>100</y><w>340</w><h>80</h></coordinates><panel_attributes>Informe
+--
+-porcentajeExamenesDesaprobados: int
+-promedioTiempoExamenesAutoAprobados: int
+--
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>690</x><y>160</y><w>90</w><h>140</h></coordinates><panel_attributes>lt=&lt;-
+m1=1..n
+- examenes</panel_attributes><additional_attributes>10;120;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>780</x><y>120</y><w>230</w><h>30</h></coordinates><panel_attributes>lt=&lt;..</panel_attributes><additional_attributes>210;10;10;10</additional_attributes></element></diagram>
