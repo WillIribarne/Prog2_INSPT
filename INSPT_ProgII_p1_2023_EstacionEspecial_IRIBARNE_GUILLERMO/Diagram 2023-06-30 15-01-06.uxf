@@ -1,0 +1,43 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>0</x><y>80</y><w>210</w><h>120</h></coordinates><panel_attributes>EstacionAtlantis
+--
+
+--
++mostrarManifiestos(): void
++estacionarNave(): void
++muestraNoHayPuntosDisponibles(): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>380</x><y>40</y><w>300</w><h>160</h></coordinates><panel_attributes>PuntoDeAtraque
+--
+
+--
++getNave(): Nave
++estacionarNave(Nave): void
++liberarNave(): void
++muestraEstacionamientoExitoso(): void
++muestraEstacionamientoFallido(): void
++mostrarManifiestoNaveEstacionada(): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>200</x><y>110</y><w>200</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+m1=0..n
+-puntosDeAtraque</panel_attributes><additional_attributes>180;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>480</x><y>190</y><w>60</w><h>130</h></coordinates><panel_attributes>lt=&lt;-
+-nave</panel_attributes><additional_attributes>10;110;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>390</x><y>300</y><w>280</w><h>140</h></coordinates><panel_attributes>/Nave/
+--
+-planetaOrigen: String
+-cantMiembrosTripulacion: int
+--
+/+mostrarManifiesto(): void/
+/+puedeEstacionarse(): boolean/
++getCantMiembrosTripulacion(): int
++muestraPlanetaYTripulacionNave(): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>260</x><y>510</y><w>210</w><h>70</h></coordinates><panel_attributes>Cargo
+--
+
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>380</x><y>430</y><w>120</w><h>100</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>100;10;10;80</additional_attributes></element><element><id>UMLClass</id><coordinates><x>580</x><y>500</y><w>210</w><h>80</h></coordinates><panel_attributes>Cruiser
+--
+-cantidadPasajeros: int
+--
+-promedioPorcentualPasajerosSobreTotal(): double
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>520</x><y>430</y><w>180</w><h>90</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;160;70</additional_attributes></element><element><id>UMLClass</id><coordinates><x>280</x><y>640</y><w>210</w><h>110</h></coordinates><panel_attributes>Carga
+--
+-descripcion: String
+-volumen: int
+--
++getVolumen(): int
++getDescripcion(): String</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>400</x><y>570</y><w>60</w><h>90</h></coordinates><panel_attributes>lt=&lt;-
+-carga</panel_attributes><additional_attributes>10;70;10;10</additional_attributes></element></diagram>
