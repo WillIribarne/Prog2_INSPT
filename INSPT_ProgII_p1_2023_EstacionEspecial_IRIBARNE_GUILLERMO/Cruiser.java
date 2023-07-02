@@ -1,4 +1,4 @@
-package PrimerParcial2023;
+package INSPT_ProgII_p1_2023_EstacionEspecial_IRIBARNE_GUILLERMO;
 
 public class Cruiser extends Nave{
     private int cantPasajeros;
